@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Objetos Predefinidos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="CSS/Estilos.css" rel="stylesheet">
+    </head>
+    <body>
+        <h2>UTILIZACION DE OBJETOS JS</h2>
+        <div>
+            <h3>Reyes Magos</h3>
+                <p>Click the button to return the number of days until the "Reyes Magos" comes.</p>
+                <input type="date" id="inReyes">
+                <button id="botonReyes">Reyes Magos</button>
+                <p id="outReyes"></p>
+        </div>
+
+
+        <div>
+            <h3>Fecha con formato</h3>
+                <p>Click to know the "DATE" and "HOUR"</p>
+                <!-- Hoy es martes, 22 de septiembre de 2022 y son las 12:34 horas -->
+                <button id="botonFecha">Today's date</button>
+                <p id="outFecha"></p>
+        </div>
+
+       <div>
+            <h3>Area y Perimetro del circulo</h3>
+                <p>Write the radious and click to know the area and the perimeter of the circle</p>
+                <!-- Los resultados con 2 decimales -->
+                <input type="number" id="inRadio">
+                <button id="botonRadio">Area and Perimeter</button>
+                <p id="outRadio"></p>
+       </div>
+
+       <div>
+           <h3>Calcular numero aleatorio</h3>
+               <p>Choose to values to generate a random number</p>
+               <p>Min value:<input type="number" id="inRandomMin"></p>
+               <p>Max value:<input type="number" id="inRandomMax"></p>
+               <button id="botonRandom">Random Number</button>
+               <p id="outRandom"></p>
+       </div>
+
+       <div>
+           <h3>Jugar con Strings</h3>
+               <p>Write a String and choose a option</p>
+               <input type="text" id="inStr">
+    
+               <ul>
+                   <ol>
+                       <p>Choose to print the FIRST MIDDLE PART of the String</p>
+                       <button id="botonStrMiddle">First middle part</button>
+                       <p id="outStrMiddle"></p>
+                   </ol>
+                   <ol>
+                       <p>Choose to print the LAST CHARACTER of the String</p>
+                       <button id="botonStrLast">Last character</button>
+                       <p id="outStrLast"></p>
+                   </ol>
+                   <ol>
+                       <p>Choose to print the INVERSE of the String</p>
+                       <button id="botonStrInverse">Inverse</button>
+                       <p id="outStrInverse"></p>
+                   </ol>
+                   <ol>
+                       <p>Choose to print the String SEPARATING BY SCRIPTS(-)</p>
+                       <button id="botonStrSeparate">Separate by scripts</button>
+                       <p id="outStrSeparate"></p>
+                   </ol>
+                   <ol>
+                       <p>Choose to print the NUMBER OF VOWELS IN the String</p>
+                       <button id="botonStrVowels">Number of vowels</button>
+                       <p id="outStrVowels"></p>
+                   </ol>
+                </ul>
+        </div>
+
+
+        <script src="JavaScript/Botones.js"></script>
+
+
+    </body>
+</html>
