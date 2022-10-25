@@ -1,90 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Objetos Predefinidos</title>
+        <title>Tema 5</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="CSS/Estilos.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <h2>UTILIZACION DE OBJETOS JS</h2>
-        <div>
-            <h3>Reyes Magos</h3>
-                <p>Click the button to return the number of days until the "Reyes Magos" comes.</p>
-                <input type="date" id="inReyes">
-                <button type="button" id="botonReyes">Reyes Magos</button>
-                <p id="outReyes"></p>
-        </div>
-
-
-        <div>
-            <h3>Fecha con formato</h3>
-                <p>Click to know the "DATE" and "HOUR"</p>
-                <!-- Hoy es martes, 22 de septiembre de 2022 y son las 12:34 horas -->
-                <button type="button" id="botonFecha">Today's date</button>
-                <p id="outFecha"></p>
-        </div>
-
-       <div>
-            <h3>Area y Perimetro del circulo</h3>
-                <p>Write the radious and click to know the area and the perimeter of the circle</p>
-                <!-- Los resultados con 2 decimales -->
-                <input type="number" id="inRadio">
-                <button type="button" id="botonRadio">Area and Perimeter</button>
-                <p id="outRadio"></p>
-       </div>
-
-       <div>
-           <h3>Calcular numero aleatorio</h3>
-               <p>Choose to values to generate a random number</p>
-               <p>Min value:<input type="number" id="inRandomMin"></p>
-               <p>Max value:<input type="number" id="inRandomMax"></p>
-               <button type="button" id="botonRandom">Random Number</button>
-               <p id="outRandom"></p>
-       </div>
-
-       <div>
-           <h3>Jugar con Strings</h3>
-               <p>Write a String and choose a option</p>
-               <input type="text" id="inStr">
+        <h1>
+            U.T.5 .- EVENTOS, FORMULARIOS Y EXPRESIONES REGULARES EN JAVASCRIPT
+            PRÁCTICA 1. EVENTOS EN JAVASCRIPT
+        </h1>
+        <h3>Objetivo: Familiarizarse con la gestión de eventos en Javascript.
+        </h3>
+        <h3> Desarrollo: Se realizarán las tareas enunciadas a continuación, utilizando los materiales aportados por la
+            profesora y consultas de bibliografía e Internet. Elaborando los ficheros necesarios, documentando
+            debidamente con los comentarios oportunos.
+        </h3>
     
-            
-                   
-            <p>Choose to print the FIRST MIDDLE PART of the String</p>
-            <button type="button" id="botonStrMiddle">First middle part</button>
-            <p id="outStrMiddle"></p>
-            
-            
-            
-            <p>Choose to print the LAST CHARACTER of the String</p>
-            <button type="button" id="botonStrLast">Last character</button>
-            <p id="outStrLast"></p>
-            
-            
-            
-            <p>Choose to print the INVERSE of the String</p>
-            <button type="button" id="botonStrInverse">Inverse</button>
-            <p id="outStrInverse"></p>
-            
-            
-            
-            <p>Choose to print the String SEPARATING BY SCRIPTS(-)</p>
-            <button type="button" id="botonStrSeparate">Separate by scripts</button>
-            <p id="outStrSeparate"></p>
-            
-            
-            
-            <p>Choose to print the NUMBER OF VOWELS IN the String</p>
-            <button type="button" id="botonStrVowels">Number of vowels</button>
-            <p id="outStrVowels"></p>
-                   
-                       
-                
-        </div>
+    
+    <h4>Ejercicio 01</h4>
+
+        <p>Realiza una página web que muestre un número dentro de un div y responda a los siguientes eventos de la
+            siguiente manera:
+            Cuando haga doble click, calculará el triple del número
+            Cuando pase el ratón por encima cambiará de color (fondo y fuente) y cuando salga volverá a su color
+            original.
+        </p>
+
+        <p><a href="ejercicio01.html">Abrir ejercicio 01 </a></p>
 
 
-        <script src="JavaScript/Botones.js"></script>
+    <h4>Ejercicio 02</h4>
+        <p>
+            A partir de la página web proporcionada, completar el código JavaScript para que:
+        </p>
 
+        <ul>
+            <li>Cuando se pinche sobre el primer enlace, se oculte su sección relacionada. Observa que los id de
+                enlaces y contenido tienen un formato similar y que el id del enlace corresponde con el id del
+                contenido. ejemplo: enlace <strong>_1</strong>corresponde con contenido<strong>_1</strong>
+            </li>
+            <li>Cuando se vuelva a pinchar sobre el mismo enlace, se muestre otra vez esa sección de contenidos
+                (pista: propiedad style.display o style.visibility )
+            </li>
+            <li>Completar el resto de enlaces de la página para que su comportamiento sea idéntico al del primer
+                enlace
+            </li>
+            <li>Cuando una sección se oculte, debe cambiar el mensaje del enlace asociado (pista: propiedad
+                innerHTML)
+            </li>
+        </ul>
+       
+        <p> <a href="ejercicio02.html">Abrir ejercicio 02 </a></p>
+    
 
+    <h4>Ejercicio 03</h4>
+
+        <p>
+            Realiza una página en Javascript que tenga una caja, queremos que en esa caja...
+        </p>
+
+        <ul>
+            <li>
+                Al mover el ratón en cualquier punto de la ventana del navegador, se muestre la posición del puntero
+                respecto del navegador y respecto de la página  Ayuda: <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/screenX">e.screen</a>, 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageX">e.page</a>, 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX">e.client</a>
+    
+            </li> Al pulsar cualquier tecla, el mensaje mostrado debe cambiar para indicar el nuevo evento y su
+            información asociada. (<a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code">ayuda</a>)
+           
+            <li> Cuando se pulsa un botón del ratón, el color de fondo del cuadro de mensaje debe ser amarillo
+                (#FFFFCC) y cuando se pulsa una tecla, el color de fondo debe ser azul (#CCE6FF). Al volver a mover
+                el ratón, el color de fondo vuelve a ser blanco. El resultado será similar a:
+            </li>
+        </ul>
+
+        <img src="img/ejercicio03.png" alt="ejercicio 03">
+    
+        <p> <a href="ejercicio03.html">Abrir ejercicio 03 </a></p>
     </body>
 </html>
