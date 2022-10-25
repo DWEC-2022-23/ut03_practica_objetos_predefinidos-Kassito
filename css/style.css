@@ -1,0 +1,43 @@
+/* body,*/ * { 
+    font-family: arial, helvetica;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+#info h1 {margin: 0;}
+
+#info td{
+   border: solid;
+}
+
+a {
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color:cadetblue
+}
+
+#numero{
+    width: 20em;
+}
+
+.teclado{
+    background-color: #CCE6FF;
+    margin: 10%;
+}
+
+.click{
+    background-color: #FFFFCC;
+    margin: 10%;
+}
+
+.mover{
+    border: thin solid;
+    margin: 10%;
+    background-color: white;
+}
